@@ -1,0 +1,83 @@
+{
+    "endpointParam3": {
+    "_id": "ep-3",
+    "name": "Test-PC-3",
+    "version": 3
+    },
+    "endpointParam2": {
+      "_id": "ep-2",
+      "name": "Test-PC-2",
+      "version": 5
+      },
+    "endpointParam1": {
+      "_id": "ep-1",
+      "name": "Test-PC-1",
+      "version": 1
+    },
+    "invalidParams": {
+      "_id": 3,
+      "name": 5,
+      "version": "invalidVersion"
+    },
+    "types": {
+      "uninstall": "uninstall",
+      "update": "update",
+      "shutdown": "shutdown"
+    },
+  "assingTaskUpdate": {
+    "name": "Example Task",
+    "type": "update",
+    "endpointIds": [
+        "ep-1",
+        "ep-2"
+    ]
+  },
+  "assingTaskUpdate2": {
+    "name": "Example Task",
+    "type": "update",
+    "endpointIds": [
+        "ep-1"
+    ]
+  },
+  "assingTaskShutdown": {
+    "name": "Example Task",
+    "type": "shutdown",
+    "endpointIds": [
+        "ep-1",
+        "ep-2"
+    ]
+  },
+  "assingTaskNotInDb": {
+    "name": "Example Task",
+    "type": "shutdown",
+    "endpointIds": [
+        "ep-4"
+    ]
+  },
+  "assingTaskInvalidParams": {
+    "name": 1,
+    "type": 2,
+    "endpointIds": []
+  },
+
+  "latestVersion": {
+    "version": 5
+  },
+  "invalidId": {
+    "invalidId": "e11bc3f0-9bb4-4ee2-ada7-ce"
+  },
+  "processingTaskId": {
+    "processingTaskId": "725e74fd-6427-4525-8b3f-503ec253d0de"
+  },
+
+  "messages": {
+    "idStringCheck": "_id must be a string",
+    "nameStringCheck": "name must be a string",
+    "tasksMessages": "name must be a string",
+    "taskNotFound": "Task not found",
+    "taskNotFoundCancel": "Cannot POST",
+    "processingTask": "Tasks in processing status cannot be deleted"
+  }
+  
+  
+}
